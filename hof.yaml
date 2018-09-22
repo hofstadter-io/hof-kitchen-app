@@ -1,0 +1,9 @@
+app:
+  project: example
+  name: "My Example App"
+
+auth:
+  username: turtle
+  apikey: we-go-all-the-way-down
+
+host: "http://localhost:1323/studios"
