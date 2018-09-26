@@ -1,44 +1,46 @@
 user:
   class: reader
-  fields:
-    - name: first_name
-      type: string
-      length: 64
-    - name: middle_name
-      type: string
-      length: 64
-    - name: last_name
-      type: string
-      length: 64
-    - name: title
-      type: string
-      length: 16
-    - name: suffix
-      type: string
-      length: 16
-    - name: language
-      type: string
-      length: 32
+  profile:
+    fields:
+      - name: first_name
+        type: string
+        length: 64
+      - name: middle_name
+        type: string
+        length: 64
+      - name: last_name
+        type: string
+        length: 64
+      - name: title
+        type: string
+        length: 16
+      - name: suffix
+        type: string
+        length: 16
+      - name: language
+        type: string
+        length: 8
 
 user:
   class: journalist
-  fields:
-    - name: first_name
-      type: string
-      length: 64
-    - name: middle_name
-      type: string
-      length: 64
-    - name: last_name
-      type: string
-      length: 64
-    - name: title
-      type: string
-      length: 16
-    - name: suffix
-      type: string
-      length: 16
-    - name: language
-      type: string
-      length: 32
+  profile:
+    fields:
+      - name: first_name
+        type: string
+        length: 64
+      - name: middle_name
+        type: string
+        length: 64
+      - name: last_name
+        type: string
+        length: 64
+      - name: title
+        type: string
+        length: 16
+      - name: suffix
+        type: string
+        length: 16
+      - name: language
+        type: string
+        length: 8
 
