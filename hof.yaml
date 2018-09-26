@@ -1,9 +1,8 @@
 app:
-  project: example
-  name: "My Example App"
+  name: example
 
 auth:
-  username: turtle
+  username: turtles
   apikey: we-go-all-the-way-down
 
-host: "http://localhost:1323/studios"
+host: "https://example.live.hofstadter.io/studios"

@@ -1,16 +1,12 @@
 app:
-  name: "Hof Starter Kit"
-  package-name: "example"
-  version: "0.0.1"
-  author: "Tony Worm <tony@hofstadter.io>"
-  license: "BSD 3-Clause"
+  name: "example"
+  title: "Hof Starter Kit"
 
-  homepage: "https://example.com"
+  config:
+    gaTracking: "UA-000000-23"
 
-  keywords:
-    - "Hofstadter"
-    - "Studios"
-    - "HofStarterKit"
-    - "example"
-
-  mode: live
+    oauth:
+      google: false
+      facebook: false
+      linkedin: false
+      github: false
