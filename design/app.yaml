@@ -1,5 +1,6 @@
 app:
   name: "example"
+  package-name: "example"
   title: "Hof Starter Kit"
 
   config:
@@ -10,3 +11,5 @@ app:
       facebook: false
       linkedin: false
       github: false
+
+  mode: live
