@@ -13,3 +13,16 @@ app:
       github: false
 
   mode: live
+
+  package-name: "example"
+  version: "0.0.1"
+  author: "Hofstadter <support@hofstadter.io>"
+  license: "BSD 3-Clause"
+
+  homepage: "https://example.com"
+
+  keywords:
+    - "Hofstadter"
+    - "Studios"
+    - "HofStarterKit"
+    - "example"
