@@ -1,5 +1,5 @@
 user:
-  class: reader
+  class: worker
   profile:
     fields:
       - name: first_name
@@ -22,7 +22,7 @@ user:
         length: 8
 
 user:
-  class: journalist
+  class: employer
   profile:
     fields:
       - name: first_name
