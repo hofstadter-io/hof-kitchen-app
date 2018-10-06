@@ -1,0 +1,21 @@
+app:
+  name: "example"
+
+  config:
+    gaTracking: "UA-000000-23"
+
+    oauth:
+      google: true
+      facebook: true
+      linkedin: false
+      github: false
+
+    multilang:
+      picker: false
+      languages:
+        - short: en
+          code: en-US
+        - short: ru
+          code: ru-RU
+
+

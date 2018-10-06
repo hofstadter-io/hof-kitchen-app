@@ -1,27 +1,7 @@
 app:
   name: "example"
   package-name: "example"
-  title: "Hof Starter Kit"
-
-  config:
-    gaTracking: "UA-000000-23"
-
-    oauth:
-      google: false
-      facebook: false
-      linkedin: false
-      github: false
-
-  mode: live
-
   version: "0.0.1"
-  author: "Hofstadter <support@hofstadter.io>"
-  license: "BSD 3-Clause"
+  title: "Hof Starter App"
+  mode: local
 
-  homepage: "https://example.com"
-
-  keywords:
-    - "Hofstadter"
-    - "Studios"
-    - "HofStarterKit"
-    - "example"

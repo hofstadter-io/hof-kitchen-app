@@ -1,5 +1,5 @@
 user:
-  class: worker
+  class: reader
   profile:
     fields:
       - name: first_name
@@ -18,11 +18,14 @@ user:
         type: string
         length: 16
       - name: language
-        type: string
+        type: enum
+        choices:
+          - en_US
+          - ru_RU
         length: 8
 
 user:
-  class: employer
+  class: journalist
   profile:
     fields:
       - name: first_name
