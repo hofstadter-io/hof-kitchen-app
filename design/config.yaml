@@ -10,6 +10,10 @@ app:
       linkedin: false
       github: false
 
+    mailer:
+      provider: mailgun
+      sender: "support@hofstadter.io"
+
     multilang:
       picker: false
       languages:
