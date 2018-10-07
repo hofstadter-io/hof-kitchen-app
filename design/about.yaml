@@ -1,14 +1,14 @@
 app:
-  name: "example"
+  name: "hof-starter-app"
 
   author: "Hofstadter <support@hofstadter.io>"
   license: "BSD 3-Clause"
 
-  homepage: "https://example.live.hofstadter.io"
+  homepage: "https://hof-starter-app.live.hofstadter.io"
 
   keywords:
     - "Hofstadter"
     - "Studios"
-    - "HofStarterKit"
-    - "example"
+    - "HofStarterApp"
+    - "hof-starter-app"
 

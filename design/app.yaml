@@ -1,7 +1,6 @@
 app:
-  name: "example"
-  package-name: "example"
+  name: "hof-starter-app"
+  package-name: "hof-starter-app"
   version: "0.0.1"
   title: "Hof Starter App"
-  # mode: live
 

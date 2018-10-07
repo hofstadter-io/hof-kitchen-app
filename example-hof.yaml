@@ -1,8 +1,8 @@
 app:
-  name: example
+  name: hof-starter-app
 
 auth:
-  username: turtles
-  apikey: we-go-all-the-way-down
+  username: "..."
+  apikey: "..."
 
-host: "https://example.live.hofstadter.io/studios"
+host: "https://hof-stater-app.live.hofstadter.io/studios"
