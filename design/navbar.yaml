@@ -1,0 +1,18 @@
+app:
+  name: "hof-starter-app"
+
+  navbar:
+
+    logo:
+      type: text
+      value: "HofStarter App"
+      link: "/"
+
+    items:
+      - name: About
+        link: "/about"
+
+      - name: Contact Us
+        link: "/contact"
+
+
