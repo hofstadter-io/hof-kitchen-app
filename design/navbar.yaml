@@ -5,7 +5,7 @@ app:
 
     logo:
       type: text
-      value: "HofStarter App"
+      value: "Hof Starter App"
       link: "/"
 
     items:

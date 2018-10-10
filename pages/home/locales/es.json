@@ -2,6 +2,7 @@
   "title": "Inicio",
   "meta": "Página de Inicio",
   "loading": "Cargando...",
-  "hello": "Hola"
+  "messages": {
+    "hello": "Hola"
+  }
 }
-

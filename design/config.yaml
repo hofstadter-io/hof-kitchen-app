@@ -17,11 +17,11 @@ app:
       sender: "support@hofstadter.io"
 
     multilang:
-      picker: false
+      picker: true
       languages:
         - short: en
           code: en-US
-        - short: ru
-          code: ru-RU
+        - short: es
+          code: es-ES
 
 

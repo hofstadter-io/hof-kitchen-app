@@ -1,6 +1,5 @@
 app:
   name: "hof-starter-app"
-  package-name: "hof-starter-app"
-  version: "0.0.1"
   title: "Hof Starter App"
+  version: "0.0.1"
 
