@@ -1,0 +1,29 @@
+app:
+  name: "hof-starter-app"
+
+  layout:
+
+    navbar:
+      file: "pages/layout/navbar/content.html"
+      translations:
+        - name: en
+          file: pages/layout/navbar/locales/en.json
+        - name: es
+          file: pages/layout/navbar/locales/es.json
+
+    center:
+      file: "pages/layout/center/content.html"
+      translations:
+        - name: en
+          file: pages/layout/center/locales/en.json
+        - name: es
+          file: pages/layout/center/locales/es.json
+
+    footer:
+      file: "pages/layout/footer/content.html"
+      translations:
+        - name: en
+          file: pages/layout/footer/locales/en.json
+        - name: es
+          file: pages/layout/footer/locales/es.json
+
