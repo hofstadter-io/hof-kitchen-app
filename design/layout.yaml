@@ -12,12 +12,12 @@ app:
           file: pages/layout/navbar/locales/es.json
 
     center:
-      file: "pages/layout/center/content.html"
+      file: "pages/layout/content/content.html"
       translations:
         - name: en
-          file: pages/layout/center/locales/en.json
+          file: pages/layout/content/locales/en.json
         - name: es
-          file: pages/layout/center/locales/es.json
+          file: pages/layout/content/locales/es.json
 
     footer:
       file: "pages/layout/footer/content.html"

@@ -1,5 +1,6 @@
 {
-  "about": "Sobre",
-  "contact": "Contacto"
+  "footer": {
+    "hello": "Hola Mundo"
+  }
 }
 
