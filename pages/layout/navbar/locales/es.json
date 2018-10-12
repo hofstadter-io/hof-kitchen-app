@@ -1,6 +1,8 @@
 {
   "users": "Usuario",
   "about": "Sobre",
-  "contact": "Contacto"
+  "contact": "Contacto",
+  "signin": "Iniciar sesión",
+  "logout": "Cerrar sesión"
 }
 

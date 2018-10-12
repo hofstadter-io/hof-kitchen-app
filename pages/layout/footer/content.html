@@ -1,4 +1,15 @@
-<div className="d-flex flex-shrink-0 justify-content-center bg-dark text-white">
-  <span>&copy; 2018. Hofstadter, Inc</span>
+<div id="styled-footer" className="d-flex flex-shrink-0 justify-content-center">
+	<RS.Container>
+		<RS.Row>
+			<RS.Col xs="6" sm="4">.col-6 .col-sm-4</RS.Col>
+			<RS.Col xs="6" sm="4">.col-6 .col-sm-4</RS.Col>
+			<RS.Col sm="4">.col-sm-4</RS.Col>
+		</Row>
+		<RS.Row>
+			<RS.Col xs="12" className="text-center">
+				<span>&copy; 2018. Hofstadter, Inc. - {t('footer.hello')}</span>
+			</RS.Col>
+		</Row>
+	</RS.Container>
 </div>
 

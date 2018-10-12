@@ -3,8 +3,12 @@ app:
 
   layout:
 
+    site:
+      style: "pages/layout/site.scss"
+
     navbar:
       file: "pages/layout/navbar/content.html"
+      style: "pages/layout/navbar/navbar.scss"
       translations:
         - name: en
           file: pages/layout/navbar/locales/en.json
@@ -21,6 +25,7 @@ app:
 
     footer:
       file: "pages/layout/footer/content.html"
+      style: "pages/layout/footer/footer.scss"
       translations:
         - name: en
           file: pages/layout/footer/locales/en.json

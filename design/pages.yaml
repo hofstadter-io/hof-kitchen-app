@@ -5,6 +5,7 @@ app:
 
     - name: home
       route: "/"
+      style: "pages/home/home.scss"
       files:
         - "pages/home/home.html"
       translations:

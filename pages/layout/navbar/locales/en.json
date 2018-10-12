@@ -1,5 +1,7 @@
 {
   "users": "Users",
   "about": "About",
-  "contact": "Contact"
+  "contact": "Contact",
+  "signin": "Sign In",
+  "logout": "Logout"
 }
