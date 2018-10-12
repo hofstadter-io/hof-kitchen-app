@@ -1,16 +1,16 @@
 app:
   name: "hof-starter-app"
 
-  # mode: live
+  mode: live
 
   config:
     gaTracking: "UA-000000-23"
 
     oauth:
-      google: true
-      facebook: true
+      google: false
+      facebook: false
       linkedin: false
-      github: false
+      github: true
 
     mailer:
       provider: mailgun
