@@ -1,4 +1,22 @@
 #styled-navbar {
-  color: #FFFFFF;
+  color: #eeeeeF;
   background: #303030;
+  a {
+    color: #eeeeeF;
+    &.navbar-brand {
+      color: #eeeeeF;
+      &.active {
+        color: #eeeeeF;
+      }
+    }
+    &:hover {
+      color: #0000ff;
+      &.active {
+        color: #0000aa;
+      }
+    }
+    &.active {
+      color: #aaaaaa;
+    }
+  }
 }
