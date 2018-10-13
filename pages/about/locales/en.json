@@ -1,0 +1,10 @@
+{
+  "title": "About",
+  "meta": "About page",
+  "loading": "Loading...",
+  "messages": {
+    "about": "About",
+    "example": "is an example website for",
+    "studios": "Studios"
+  }
+}

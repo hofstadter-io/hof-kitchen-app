@@ -1,0 +1,10 @@
+{
+  "title": "Inicio",
+  "meta": "Página de Inicio",
+  "loading": "Cargando...",
+  "messages": {
+    "about": "Sobre",
+    "example": "es un sitio web de ejemplo para",
+    "studios": "Taller"
+  }
+}

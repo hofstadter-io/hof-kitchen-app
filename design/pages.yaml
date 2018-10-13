@@ -19,7 +19,8 @@ app:
       files:
         - "pages/about/about.html"
       translations:
+      translations:
         - name: en
-          file: translations/translations.json
+          file: pages/about/locales/en.json
         - name: es
-          file: translations/translations.json
+          file: pages/about/locales/es.json
