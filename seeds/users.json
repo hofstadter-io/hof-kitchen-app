@@ -19,7 +19,8 @@
       "is_active": true,
       "profile": {
         "first_name": "Bob",
-        "last_name": "Smith"
+        "last_name": "Smith",
+        "title": "Mr."
       }
     },
     {

@@ -1,49 +1,26 @@
-user:
-  class: reader
-  profile:
-    fields:
-      - name: first_name
-        type: string
-        length: 64
-      - name: middle_name
-        type: string
-        length: 64
-      - name: last_name
-        type: string
-        length: 64
-      - name: title
-        type: string
-        length: 16
-      - name: suffix
-        type: string
-        length: 16
-      - name: language
-        type: enum
-        choices:
-          - en_US
-          - ru_RU
-        length: 8
+app:
+  name: "hof-starter-app"
 
-user:
-  class: journalist
-  profile:
-    fields:
-      - name: first_name
-        type: string
-        length: 64
-      - name: middle_name
-        type: string
-        length: 64
-      - name: last_name
-        type: string
-        length: 64
-      - name: title
-        type: string
-        length: 16
-      - name: suffix
-        type: string
-        length: 16
-      - name: language
-        type: string
-        length: 8
-
+  user:
+    profile:
+      fields:
+        - name: first_name
+          type: string
+          length: 64
+        - name: middle_name
+          type: string
+          length: 64
+        - name: last_name
+          type: string
+          length: 64
+        - name: title
+          type: string
+          length: 16
+        - name: suffix
+          type: string
+          length: 16
+    translations:
+      - name: en
+        file: "translations/user/en.json"
+      - name: es
+        file: "translations/user/es.json"

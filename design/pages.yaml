@@ -1,6 +1,15 @@
 app:
   name: "hof-starter-app"
 
+  builtin-pages:
+    - name: contact
+      style: "pages/builtin/contact/style.scss"
+      translations:
+        - name: en
+          file: pages/builtin/contact/locales/en.json
+        - name: es
+          file: pages/builtin/contact/locales/es.json
+
   pages:
 
     - name: home
@@ -18,7 +27,6 @@ app:
       route: "/about"
       files:
         - "pages/about/about.html"
-      translations:
       translations:
         - name: en
           file: pages/about/locales/en.json
