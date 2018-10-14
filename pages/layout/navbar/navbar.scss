@@ -1,6 +1,11 @@
 #styled-navbar {
   color: #eeeeeF;
   background: #303030;
+
+  nav {
+    padding-bottom: 0;
+  }
+
   a {
     color: #eeeeeF;
     &.navbar-brand {
@@ -18,5 +23,12 @@
     &.active {
       color: #aaaaaa;
     }
+  }
+}
+
+#brand-logo {
+  img {
+    height: 1.2em;
+    margin-top: -0.8em;
   }
 }

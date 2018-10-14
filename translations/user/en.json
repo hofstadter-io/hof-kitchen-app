@@ -35,7 +35,7 @@
     "form": {
       "title": "Sign In",
       "field": {
-        "usernameOrEmail": "Username or Email",
+        "usenameOrEmail": "Username or Email",
         "pass": "Password"
       },
       "btnSubmit": "Login"
@@ -115,8 +115,11 @@
           "admin": "admin"
         },
         "active": "Is Active",
+        "title": "Title",
         "firstName": "First Name",
+        "middleName": "Middle Name",
         "lastName": "Last Name",
+        "suffix": "Suffix",
         "serial": "Serial",
         "pass": "Password",
         "passConf": "Password Confirmation"

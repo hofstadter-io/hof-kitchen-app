@@ -7,6 +7,7 @@ app:
       style: "pages/layout/site.scss"
 
     navbar:
+      custom: false
       file: "pages/layout/navbar/content.html"
       style: "pages/layout/navbar/navbar.scss"
       translations:
@@ -14,6 +15,21 @@ app:
           file: pages/layout/navbar/locales/en.json
         - name: es
           file: pages/layout/navbar/locales/es.json
+
+      logo:
+        type: image
+        source: "https://hofstadter.io/images/hof-logo.png"
+        # type: text
+        # value: "HofStarterKit"
+
+      leftItems:
+        - name: users
+          href: "/users"
+          role: admin
+        - name: about
+          href: "/about"
+        - name: contact
+          href: "/contact"
 
     center:
       file: "pages/layout/content/content.html"
