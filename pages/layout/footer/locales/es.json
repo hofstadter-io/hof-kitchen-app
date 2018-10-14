@@ -1,6 +1,7 @@
 {
-  "footer": {
-    "hello": "Hola Mundo"
-  }
+  "documentation": "Documentación",
+  "channel": "Channel",
+  "contact": "Contacto",
+  "careers": "Carreras",
+  "legal": "Legal"
 }
-
