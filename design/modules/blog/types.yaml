@@ -1,7 +1,7 @@
 type:
   name: post
 
-  owned: true
+  owned: has-many
 
   fields:
   - name: title
@@ -37,7 +37,7 @@ type:
 type:
   name: comment
 
-  owned: true
+  owned: has-many
 
   fields:
   - name: content
