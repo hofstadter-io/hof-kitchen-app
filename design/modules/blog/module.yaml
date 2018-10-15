@@ -1,0 +1,29 @@
+module:
+  name: blog
+
+  types:
+  - name: post
+    type: type.modules.blog.post
+  - name: comment
+    type: type.modules.blog.comment
+  - name: tag
+    type: type.modules.blog.tag
+
+  seeds:
+    file: seeds/blogs.json
+    types:
+      - name: tag
+        data: tags
+        type: type.modules.blog.tag
+      - name: post
+        data: posts
+        type: type.modules.blog.post
+        lookup:
+          tags: value
+
+  translations:
+  - name: en
+    file: translations/blog/en.json
+  - name: es
+    file: translations/blog/es.json
+

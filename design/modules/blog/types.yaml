@@ -1,0 +1,73 @@
+type:
+  name: post
+
+  owned: true
+
+  fields:
+  - name: title
+    type: string
+    length: 128
+  - name: content
+    type: text
+  - name: draft
+    type: boolean
+
+  relations:
+  - name: comments
+    type: type.modules.blog.comment
+    relation: one-to-many
+  - name: tags
+    type: type.modules.blog.tag
+    relation: many-to-many
+
+  auth:
+    edit: ["admin", "owner"]
+    view: ["public"]
+
+  search:
+    fields:
+      - title
+      - content
+    relation-fields:
+      - comments.content
+      - tags.value
+
+---
+
+type:
+  name: comment
+
+  owned: true
+
+  fields:
+  - name: content
+    type: string
+    length: 2000
+
+  relations:
+  - name: posts
+    type: type.modules.blog.post
+    relation: belongs-to-one
+
+  auth:
+    edit: ["admin", "owner"]
+    view: ["public"]
+
+---
+type:
+  name: tag
+
+  fields:
+  - name: value
+    type: string
+    length: 64
+
+  relations:
+  - name: posts
+    type: type.modules.blog.post
+    relation: belongs-to-many
+
+  auth:
+    edit: ["admin"]
+    view: ["public"]
+

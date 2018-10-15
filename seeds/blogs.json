@@ -1,0 +1,34 @@
+{
+  "tags": [
+    {
+      "value": "hello"
+    },
+    {
+      "value": "admin"
+    },
+    {
+      "value": "hofstadter"
+    }
+  ],
+  "posts": [
+    {
+      "owner": "admin",
+      "title": "Hello World",
+      "content": "ipsum lorem",
+      "tags": [
+        { "value": "hello" },
+        { "value": "admin" }
+      ],
+      "comments": [
+        {
+          "owner": "bob",
+          "content": "nice post!"
+        },
+        {
+          "owner": "alice",
+          "content": "I second that notion"
+        }
+      ]
+    }
+  ]
+}
