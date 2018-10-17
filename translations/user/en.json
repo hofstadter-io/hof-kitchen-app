@@ -119,6 +119,7 @@
         "firstName": "First Name",
         "middleName": "Middle Name",
         "lastName": "Last Name",
+        "familyName": "Family Name",
         "suffix": "Suffix",
         "serial": "Serial",
         "pass": "Password",

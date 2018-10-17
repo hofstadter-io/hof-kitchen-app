@@ -12,7 +12,7 @@
   ],
   "posts": [
     {
-      "owner": "admin",
+      "author": "admin",
       "title": "Hello World",
       "content": "ipsum lorem",
       "tags": [
@@ -21,13 +21,52 @@
       ],
       "comments": [
         {
-          "owner": "bob",
+          "author": "bob",
           "content": "nice post!"
         },
         {
-          "owner": "alice",
+          "author": "alice",
           "content": "I second that notion"
         }
+      ]
+    },
+    {
+      "author": "bob",
+      "title": "What's with the Turles?",
+      "content": "like, why are they going all the way down...?",
+      "published": true,
+      "tags": [
+        { "value": "hello" },
+        { "value": "hofstadter" }
+      ],
+      "comments": [
+        {
+          "author": "admin",
+          "content": "nice post!"
+        },
+        {
+          "author": "alice",
+          "content": "I second that notion"
+        }
+      ]
+    },
+    {
+      "author": "bob",
+      "title": "What's with the Turles? pt2",
+      "content": "like, why are they going all the way down...?",
+      "tags": [
+        { "value": "hello" },
+        { "value": "hofstadter" }
+      ]
+    },
+    {
+      "author": "alice",
+      "title": "How about them Turles!",
+      "content": "they hold teh world up",
+      "published": true,
+      "tags": [
+        { "value": "hello" },
+        { "value": "hofstadter" }
       ]
     }
   ]

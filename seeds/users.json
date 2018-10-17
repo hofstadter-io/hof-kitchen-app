@@ -5,10 +5,10 @@
       "email": "admin@example.com",
       "password": "admin321",
       "role": "admin",
-      "is_active": true,
+      "isActive": true,
       "profile": {
-        "first_name": "Big",
-        "last_name": "Bossman"
+        "firstName": "Big",
+        "lastName": "Bossman"
       }
     },
     {
@@ -16,10 +16,10 @@
       "email": "bob@example.com",
       "password": "user-bob",
       "role": "user",
-      "is_active": true,
+      "isActive": true,
       "profile": {
-        "first_name": "Bob",
-        "last_name": "Smith",
+        "firstName": "Bob",
+        "lastName": "Smith",
         "title": "Mr."
       }
     },
@@ -28,10 +28,10 @@
       "email": "alice@example.com",
       "password": "user-alice",
       "role": "user",
-      "is_active": true,
+      "isActive": true,
       "profile": {
-        "first_name": "Alice",
-        "last_name": "Bunny"
+        "firstName": "Alice",
+        "lastName": "Bunny"
       }
     }
   ]
