@@ -33,3 +33,13 @@ type:
     update: ['admin']
     delete: ['admin']
 
+  pages:
+    list:
+      route: "/posts"
+      style: "design/modules/blog/pages/list/style.scss"
+    view:
+      route: "/post/:id"
+      style: "design/modules/blog/pages/view/style.scss"
+      custom: true
+      files:
+        - "design/modules/blog/pages/view/content.html"

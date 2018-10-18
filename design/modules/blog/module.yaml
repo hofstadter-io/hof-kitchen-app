@@ -23,7 +23,7 @@ module:
 
   translations:
   - name: en
-    file: translations/blog/en.json
+    file: design/modules/blog/locales/en.json
   - name: es
-    file: translations/blog/es.json
+    file: design/modules/blog/locales/es.json
 

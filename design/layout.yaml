@@ -23,12 +23,15 @@ app:
         # value: "HofStarterKit"
 
       leftItems:
-        - name: blogs
-          href: "/blogs"
-          role: user
+        - name: posts
+          href: "/posts"
+          roles:
+            - user
+            - admin
         - name: users
           href: "/users"
-          role: admin
+          roles:
+            - admin
         - name: about
           href: "/about"
         - name: contact

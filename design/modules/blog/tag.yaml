@@ -16,3 +16,8 @@ type:
     update: ['admin']
     delete: ['admin']
 
+  pages:
+    list:
+      route: "/tags"
+    view:
+      route: "/tag/:id"

@@ -21,3 +21,8 @@ type:
     update: ['admin']
     delete: ['admin']
 
+  pages:
+    list:
+      route: "/comments"
+    view:
+      route: "/comment/:id"
