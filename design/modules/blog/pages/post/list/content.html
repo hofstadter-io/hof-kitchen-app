@@ -9,10 +9,10 @@
 		</RS.Col>
 
     <RS.Col lg="2">
-    <Link to="/post/new">New Post</Link>
+    <Link to="/post/new">{t('post.btn.new')}</Link>
 		</RS.Col>
 	</RS.Row>
-  <RS.Row>
+  <RS.Row className="row justify-content-center">
     <RS.Col lg="8">
 			<RS.ListGroup>
       { posts.map(post => {

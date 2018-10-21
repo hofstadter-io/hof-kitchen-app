@@ -1,5 +1,5 @@
 <RS.Container>
-  <RS.Row>
+  <RS.Row style={ {marginTop: '1em'} }>
 
     <RS.Col lg="2">
       <Link id="back-button" to="/posts">
@@ -7,30 +7,31 @@
       </Link>
 		</RS.Col>
 
-    <RS.Col lg="8">
-      <h2>Posts</h2>
+    <RS.Col lg="6">
 		</RS.Col>
 
     <RS.Col lg="2">
     { currentUser && (currentUser.id == post.authorId) ? (
     <div className="btn-group" role="group" aria-label="Owner options">
-      <Link to={"/post/edit/" + post.id }>
       <button type="button" className="btn btn-primary">
-        {t('post.btn.edit')}
+        <Link to={"/post/edit/" + post.id } className="text-white">
+          {t('post.btn.edit')}
+        </Link>
       </button>
-      </Link>
-      <button type="button" className="btn btn-danger" onClick={() => postDelete(post.id)}>Delete</button>
+      <button type="button" className="btn btn-danger" onClick={() => postDelete(post.id)}>
+          {t('post.btn.delete')}
+      </button>
     </div>
     ) : "" }
 		</RS.Col>
-	</RS.Row>
-  <RS.Row>
+  </RS.Row>
+	<div className="row justify-content-center">
     <RS.Col lg="8">
 			<h1>{ post.title }</h1>
       <h6>by { post.author ? post.author.username : "???"} { post.published ? " - Published" : " - Draft" }</h6>
 			<hr />
 			<pre>{ post.content }</pre> 
 		</RS.Col>
-	</RS.Row>
+	</div>
 </RS.Container>
 
