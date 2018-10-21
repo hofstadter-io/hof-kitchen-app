@@ -1,0 +1,36 @@
+<RS.Container>
+  <RS.Row>
+
+    <RS.Col lg="2">
+      <Link id="back-button" to="/posts">
+        {t('post.btn.back')}
+      </Link>
+		</RS.Col>
+
+    <RS.Col lg="8">
+      <h2>Posts</h2>
+		</RS.Col>
+
+    <RS.Col lg="2">
+    { currentUser && (currentUser.id == post.authorId) ? (
+    <div className="btn-group" role="group" aria-label="Owner options">
+      <Link to={"/post/edit/" + post.id }>
+      <button type="button" className="btn btn-primary">
+        {t('post.btn.edit')}
+      </button>
+      </Link>
+      <button type="button" className="btn btn-danger" onClick={() => postDelete(post.id)}>Delete</button>
+    </div>
+    ) : "" }
+		</RS.Col>
+	</RS.Row>
+  <RS.Row>
+    <RS.Col lg="8">
+			<h1>{ post.title }</h1>
+      <h6>by { post.author ? post.author.username : "???"} { post.published ? " - Published" : " - Draft" }</h6>
+			<hr />
+			<pre>{ post.content }</pre> 
+		</RS.Col>
+	</RS.Row>
+</RS.Container>
+

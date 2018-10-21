@@ -1,4 +1,4 @@
-<Link id="back-button" to="/posts">
+<Link to={"/post/" + post.id}>
   {t('post.btn.back')}
 </Link>
 
@@ -6,7 +6,7 @@
   <RS.Row>
     <RS.Col lg="8">
 			<h1>{ post.title }</h1>
-			<h6>by { post.author ? post.author.username : "???"}</h6>
+      <h6>by { post.author ? post.author.username : "???"} { post.published ? " - Published" : " - Draft" }</h6>
 			<hr />
 			<pre>{ post.content }</pre> 
 		</RS.Col>

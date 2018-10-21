@@ -1,0 +1,43 @@
+<RS.Container>
+  <RS.Row>
+
+    <RS.Col lg="2">
+		</RS.Col>
+
+    <RS.Col lg="8">
+      <h2>Posts</h2>
+		</RS.Col>
+
+    <RS.Col lg="2">
+    <Link to="/post/new">New Post</Link>
+		</RS.Col>
+	</RS.Row>
+  <RS.Row>
+    <RS.Col lg="8">
+			<RS.ListGroup>
+      { posts.map(post => {
+        var dateDiff = distanceInWords(post.updatedAt, new Date());
+      return (
+      <RS.ListGroupItem key={post.id}>
+					<div className="flex-column align-items-start">
+						<div className="d-flex w-100 justify-content-between">
+							<div>
+                <Link to={"/post/" + post.id}>{ post.title }</Link> - <i>by { post.author ? post.author.username : "???"} { post.published ? "" : " - Draft" }</i>
+							</div>
+              <small>{ dateDiff }</small>
+						</div>
+						<p className="mb-1">{ post.content.substring(0,64) }</p>
+					</div>
+        </RS.ListGroupItem>
+        )}
+      )}
+			</RS.ListGroup>
+		</RS.Col>
+	</RS.Row>
+  <RS.Row>
+    <RS.Col lg="8">
+    <h2> </h2>
+		</RS.Col>
+	</RS.Row>
+</RS.Container>
+

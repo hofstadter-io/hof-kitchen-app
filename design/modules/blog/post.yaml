@@ -28,18 +28,29 @@ type:
 
   auth:
     view:
+      public: ['user']
       private: ['admin']
     create: ['user']
     update: ['admin']
     delete: ['admin']
 
   pages:
+    create:
+      route: "/post/new"
+
     list:
       route: "/posts"
-      style: "design/modules/blog/pages/list/style.scss"
-    view:
-      route: "/post/:id"
-      style: "design/modules/blog/pages/view/style.scss"
+      style: "design/modules/blog/pages/post/list/style.scss"
       custom: true
       files:
-        - "design/modules/blog/pages/view/content.html"
+        - "design/modules/blog/pages/post/list/content.html"
+    view:
+      route: "/post/:id"
+      style: "design/modules/blog/pages/post/view/style.scss"
+      custom: true
+      files:
+        - "design/modules/blog/pages/post/view/content.html"
+
+    update:
+      route: "/post/edit/:id"
+      style: "design/modules/blog/pages/post/update/style.scss"
