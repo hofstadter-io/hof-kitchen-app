@@ -31,7 +31,6 @@ type:
       public: ['user']
       private: ['admin']
     create: ['user']
-    update: ['admin']
     delete: ['admin']
 
   pages:

@@ -22,6 +22,9 @@ app:
           file: pages/home/locales/en.json
         - name: es
           file: pages/home/locales/es.json
+      imports:
+        - library: "react-photo-gallery"
+          default: Gallery
 
     - name: about
       route: "/about"

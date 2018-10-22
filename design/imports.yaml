@@ -1,0 +1,8 @@
+app:
+  name: "hof-starter-app"
+
+  imports:
+    - library: "react-table"
+      version: "^6.8.6"
+    - library: "react-photo-gallery"
+      version: "^6.2.1"

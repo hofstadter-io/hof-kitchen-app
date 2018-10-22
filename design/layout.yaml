@@ -6,6 +6,10 @@ app:
     site:
       style: "pages/layout/site.scss"
 
+    page:
+      custom: false
+      file: "pages/layout/page/content.html"
+
     navbar:
       custom: false
       file: "pages/layout/navbar/content.html"
