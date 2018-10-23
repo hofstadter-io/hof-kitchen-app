@@ -1,8 +1,6 @@
 app:
   name: "hof-starter-app"
 
-  mode: live
-
   config:
     gaTracking: "UA-000000-23"
 
