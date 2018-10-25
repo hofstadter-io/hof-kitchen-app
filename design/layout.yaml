@@ -50,6 +50,7 @@ app:
           file: pages/layout/content/locales/es.json
 
     footer:
+      custom: true
       file: "pages/layout/footer/content.html"
       style: "pages/layout/footer/footer.scss"
       translations:
