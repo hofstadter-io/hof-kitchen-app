@@ -43,6 +43,7 @@ type:
       custom: true
       files:
         - "design/modules/blog/pages/post/list/content.html"
+
     view:
       route: "/post/:id"
       style: "design/modules/blog/pages/post/view/style.scss"
