@@ -14,8 +14,11 @@
 	</RS.Row>
   <RS.Row className="row justify-content-center">
     <RS.Col lg="8">
-			<RS.ListGroup>
-      { posts.map(post => {
+    { loading && !postPage ? <h4>Loading Posts</h4> :
+    (
+ 			<RS.ListGroup>
+      { postPage.edges.map(edge => {
+        var post = edge.node;
         var dateDiff = distanceInWords(post.updatedAt, new Date());
       return (
       <RS.ListGroupItem key={post.id}>
@@ -32,11 +35,29 @@
         )}
       )}
 			</RS.ListGroup>
+    )}
 		</RS.Col>
 	</RS.Row>
   <RS.Row>
     <RS.Col lg="8">
-    <h2> </h2>
+    { postPage && postPage.pageInfo.hasNextPage ?
+      <Pagination
+        itemsPerPage={postPage.edges.length}
+        handlePageChange={this.handlePageChange}
+        hasNextPage={postPage.pageInfo.hasNextPage}
+        pagination={type}
+        total={postPage.count}
+        loadMoreText={t('list.btn.more')}
+        defaultPageSize={10}
+      />
+      :
+      <p>no more :[</p>
+    }
+		</RS.Col>
+	</RS.Row>
+  <RS.Row>
+    <RS.Col lg="8">
+    <br />
 		</RS.Col>
 	</RS.Row>
 </RS.Container>

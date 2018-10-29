@@ -33,15 +33,41 @@
 			<pre>{ post.content }</pre> 
 			<hr />
       <h3>Comments</h3>
-      <RS.ListGroup>
-      { post.comments.map( c => {
-      return (
-        <RS.ListGroupItem key={c.id}>
-          {c.author.username} says: "{c.content}"
-        </RS.ListGroupItem>
-      )
-      } ) }
-      </RS.ListGroup>
+      { post.comments && post.comments.length > 0 ? (
+
+        <RS.ListGroup>
+        { post.comments.map( c => {
+        return (
+          <CommentOwnerEditable key={c.id}
+            comment={c} currentUser={currentUser}
+            commentUpdate={props.commentUpdate}
+            commentDelete={props.commentDelete}
+          />
+        )
+        } ) }
+        </RS.ListGroup>
+
+        ) : <pre>Be the first to add a comment.</pre>}
+
+        <div>
+          <br />
+          <pre>Add a comment</pre>
+          <div className="form-group" style={{ flex: 1 }}>
+            <input id="commentContent" type="textarea" className="form-control align-self-stretch"/>
+          </div>
+          <div className="align-self-end">
+            <button className="btn btn-success btn-sm" onClick={() => {
+              let content = document.getElementById("commentContent").value;
+              let values = { content, postId: post.id };
+              console.log("comment values", values)
+              props.commentCreate(values, "nowhere");
+              post.comments.push(values);
+              document.getElementById("commentContent").value = ""
+              }}>comment</button>
+          </div>
+        </div>
+        <br />
+
 		</RS.Col>
 	</div>
 </RS.Container>

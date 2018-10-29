@@ -36,21 +36,44 @@ type:
   pages:
     create:
       route: "/post/new"
-
-    list:
-      route: "/posts"
-      style: "design/modules/blog/pages/post/list/style.scss"
-      custom: true
-      files:
-        - "design/modules/blog/pages/post/list/content.html"
-
-    view:
-      route: "/post/:id"
-      style: "design/modules/blog/pages/post/view/style.scss"
-      custom: true
-      files:
-        - "design/modules/blog/pages/post/view/content.html"
+      extra:
+        - sdk: type.modules.blog.tag
 
     update:
       route: "/post/edit/:id"
       style: "design/modules/blog/pages/post/update/style.scss"
+      extra:
+        - sdk: type.modules.blog.tag
+
+    list:
+      route: "/posts"
+      sync: true
+      custom: true
+      style: "design/modules/blog/pages/post/list/style.scss"
+      files:
+        - "design/modules/blog/pages/post/list/content.html"
+
+    view:
+      sync: true
+      custom: true
+      route: "/post/:id"
+      style: "design/modules/blog/pages/post/view/style.scss"
+      files:
+        - "design/modules/blog/pages/post/view/content.html"
+      components:
+        - type.modules.blog.post.components.CommentOwnerEditable
+      extra:
+        - name: commentSDK
+          sdk: type.modules.blog.comment
+
+      relations:
+        - name: comments
+          # simplicity for now
+          type: type.modules.blog.comment
+          sdk: true
+          sync: true
+
+
+  components:
+    - name: CommentOwnerEditable
+      file: "design/modules/blog/components/CommentOwnerEditable.jsx"
