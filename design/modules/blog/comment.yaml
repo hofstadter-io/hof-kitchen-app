@@ -11,7 +11,7 @@ type:
     length: 2000
 
   relations:
-  - name: posts
+  - name: post
     type: type.modules.blog.post
     relation: belongs-to-one
 
