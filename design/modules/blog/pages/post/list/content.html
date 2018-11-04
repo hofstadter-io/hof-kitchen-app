@@ -17,7 +17,7 @@
     { loading && !postPage ? <h4>Loading Posts</h4> :
     (
  			<RS.ListGroup>
-      { postPage.edges.map(edge => {
+      { postPage && postPage.edges && postPage.edges.map(edge => {
         var post = edge.node;
         var dateDiff = distanceInWords(post.updatedAt, new Date());
       return (
@@ -40,7 +40,7 @@
 	</RS.Row>
   <RS.Row>
     <RS.Col lg="8">
-    { postPage && postPage.pageInfo.hasNextPage ?
+    { postPage && postPage.pageInfo && postPage.pageInfo.hasNextPage ?
       <Pagination
         itemsPerPage={postPage.edges.length}
         handlePageChange={this.handlePageChange}

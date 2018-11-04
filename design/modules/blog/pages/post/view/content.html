@@ -36,7 +36,8 @@
       { post.comments && post.comments.length > 0 ? (
 
         <RS.ListGroup>
-        { post.comments.map( c => {
+        { props.commentPage && props.commentPage.edges && props.commentPage.edges.map( edge => {
+        const c = edge.node;
         return (
           <CommentOwnerEditable key={c.id}
             comment={c} currentUser={currentUser}
