@@ -1,25 +1,25 @@
 <RS.Navbar className="bg-dark">
   <RS.Container>
     <RS.Nav>
-      <HOF.NavLink to="/" className="navbar-brand">
+      <NavLink to="/" className="navbar-brand">
         <img src="https://hofstadter.io/images/hof-logo.png"
              style={{height: '1.4em', marginTop: '-1em'}}
         />
-      </HOF.NavLink>
+      </NavLink>
 
-      <HOF.NavLink to="/about" className="nav-link" activeClassName="active">
+      <NavLink to="/about" className="nav-link" activeClassName="active">
         About
-      </HOF.NavLink>
-      <HOF.NavLink to="/contact" className="nav-link" activeClassName="active">
+      </NavLink>
+      <NavLink to="/contact" className="nav-link" activeClassName="active">
         Contact
-      </HOF.NavLink>
+      </NavLink>
     </RS.Nav>
 
     <RS.Nav className="justify-content-end">
-      <HOF.NavLink to="/login" className="nav-link" activeClassName="active">
+      <NavLink to="/login" className="nav-link" activeClassName="active">
         Sign in
-      </HOF.NavLink>
-      <HOF.LanguagePicker />
+      </NavLink>
+      <LanguagePicker />
     </RS.Nav>
   </RS.Container>
 </RS.Navbar>

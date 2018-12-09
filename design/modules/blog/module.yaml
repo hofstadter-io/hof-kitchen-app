@@ -21,6 +21,8 @@ module:
         lookup:
           tags: value
 
+  pages: []
+
   translations:
   - name: en
     file: design/modules/blog/locales/en.json

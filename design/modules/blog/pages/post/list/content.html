@@ -2,63 +2,63 @@
   <RS.Row>
 
     <RS.Col lg="2">
-		</RS.Col>
+    </RS.Col>
 
     <RS.Col lg="8">
       <h2>Posts</h2>
-		</RS.Col>
+    </RS.Col>
 
     <RS.Col lg="2">
     <Link to="/post/new">{t('post.btn.new')}</Link>
-		</RS.Col>
-	</RS.Row>
+    </RS.Col>
+  </RS.Row>
   <RS.Row className="row justify-content-center">
     <RS.Col lg="8">
-    { loading && !postPage ? <h4>Loading Posts</h4> :
-    (
- 			<RS.ListGroup>
-      { postPage && postPage.edges && postPage.edges.map(edge => {
-        var post = edge.node;
-        var dateDiff = distanceInWords(post.updatedAt, new Date());
-      return (
-      <RS.ListGroupItem key={post.id}>
-					<div className="flex-column align-items-start">
-						<div className="d-flex w-100 justify-content-between">
-							<div>
-                <Link to={"/post/" + post.id}>{ post.title }</Link> - <i>by { post.author ? post.author.username : "???"} { post.published ? "" : " - Draft" }</i>
-							</div>
-              <small>{ dateDiff }</small>
-						</div>
-						<p className="mb-1">{ post.content.substring(0,64) }</p>
-					</div>
-        </RS.ListGroupItem>
+      { loadingPosts && !posts ? <h4>Loading Posts</h4> :
+      (
+        <RS.ListGroup>
+        { posts && posts.edges && posts.edges.map(edge => {
+          var post = edge.node;
+          var dateDiff = distanceInWords(post.updatedAt, new Date());
+        return (
+          <RS.ListGroupItem key={post.id}>
+            <div className="flex-column align-items-start">
+              <div className="d-flex w-100 justify-content-between">
+                <div>
+                  <Link to={"/post/" + post.id}>{ post.title }</Link> - <i>by { post.author ? post.author.username : "???"} { post.published ? "" : " - Draft" }</i>
+                </div>
+                <small>{ dateDiff }</small>
+              </div>
+              <p className="mb-1">{ post.content.substring(0,64) }</p>
+            </div>
+          </RS.ListGroupItem>
+          )}
         )}
+        </RS.ListGroup>
       )}
-			</RS.ListGroup>
-    )}
-		</RS.Col>
-	</RS.Row>
-  <RS.Row>
+      </RS.Col>
+    </RS.Row>
+    <RS.Row>
     <RS.Col lg="8">
-    { postPage && postPage.pageInfo && postPage.pageInfo.hasNextPage ?
-      <Pagination
-        itemsPerPage={postPage.edges.length}
-        handlePageChange={this.handlePageChange}
-        hasNextPage={postPage.pageInfo.hasNextPage}
-        pagination={type}
-        total={postPage.count}
-        loadMoreText={t('list.btn.more')}
-        defaultPageSize={10}
-      />
-      :
-      <p>no more :[</p>
-    }
-		</RS.Col>
-	</RS.Row>
+      { posts && posts.pageInfo && posts.pageInfo.hasNextPage ?
+        <Pagination
+          itemsPerPage={posts.edges.length}
+          handlePageChange={this.handlePageChange}
+          hasNextPage={posts.pageInfo.hasNextPage}
+          pagination={type}
+          total={posts.count}
+          loadMoreText={t('list.btn.more')}
+          defaultPageSize={10}
+        />
+        :
+        <p>no more :[</p>
+      }
+    </RS.Col>
+  </RS.Row>
   <RS.Row>
     <RS.Col lg="8">
     <br />
-		</RS.Col>
-	</RS.Row>
+    </RS.Col>
+  </RS.Row>
 </RS.Container>
 
