@@ -21,7 +21,15 @@ module:
         lookup:
           tags: value
 
-  pages: []
+  components: []
+  forms: []
+
+  pages:
+    - name: all-posts
+    - name: user-posts
+    - name: new-post
+    - name: edit-post
+    - name: view-post
 
   translations:
   - name: en

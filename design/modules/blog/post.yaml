@@ -33,18 +33,6 @@ type:
     create: ['user']
     delete: ['admin']
 
-  pages:
-    create:
-      route: "/post/new"
-      extra:
-        - sdk: type.modules.blog.tag
-
-    update:
-      route: "/post/edit/:id"
-      style: "design/modules/blog/pages/post/update/style.scss"
-      extra:
-        - sdk: type.modules.blog.tag
-
   components:
     - name: CommentOwnerEditable
       file: "design/modules/blog/components/CommentOwnerEditable.jsx"

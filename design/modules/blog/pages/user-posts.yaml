@@ -3,14 +3,14 @@ module:
 
   pages:
 
-    - name: posts
-      route: "/posts"
+    - name: user-posts
+      route: "/posts/userId:"
 
       style:
-        - "design/modules/blog/pages/post/list/style.scss"
+        - "design/modules/blog/pages/post/user/style.scss"
 
       content:
-        - "design/modules/blog/pages/post/list/content.html"
+        - "design/modules/blog/pages/post/user/content.html"
 
       imports:
         - library: "date-fns"
@@ -27,8 +27,7 @@ module:
           type: type.modules.blog.post
           query:
             type: list
-            sync: true
-          mutations:
-            - create
-            - update
-            - delete
+            filter:
+              - name: userId
+                source: route.path-params.userId
+
