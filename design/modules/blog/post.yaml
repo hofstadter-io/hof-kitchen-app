@@ -34,7 +34,7 @@ type:
     update: ['user']
     delete: ['admin']
 
-  components:
+  files:
     - name: CommentOwnerEditable
-      content:
-        - "design/modules/blog/components/CommentOwnerEditable.jsx"
+      src: design/modules/blog/components/CommentOwnerEditable.jsx
+      dst: components/CommentOwnerEditable.jsx

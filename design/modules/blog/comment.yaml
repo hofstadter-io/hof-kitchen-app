@@ -2,8 +2,8 @@ type:
   name: comment
 
   owned:
-    type: has-many
     name: author
+    type: has-many
 
   fields:
   - name: content

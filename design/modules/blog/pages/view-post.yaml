@@ -4,7 +4,7 @@ module:
   pages:
 
     - name: view-post
-      # route: "/post/:id"
+      route: "/post/:id"
 
       style:
         - "design/modules/blog/pages/post/view/style.scss"

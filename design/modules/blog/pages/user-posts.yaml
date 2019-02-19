@@ -4,7 +4,7 @@ module:
   pages:
 
     - name: user-posts
-      # route: "/posts/:userId"
+      route: "/posts/:userId"
 
       style:
         - "design/modules/blog/pages/post/user/style.scss"

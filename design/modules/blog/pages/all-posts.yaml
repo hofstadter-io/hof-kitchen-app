@@ -4,7 +4,7 @@ module:
   pages:
 
     - name: all-posts
-      # route: "/posts"
+      route: "/posts"
 
       style:
         - "design/modules/blog/pages/post/list/style.scss"

@@ -4,7 +4,7 @@ module:
   pages:
 
     - name: edit-post
-      # route: "/post/edit/:id"
+      route: "/post/edit/:id"
 
       style:
         - "design/modules/blog/pages/post/edit/style.scss"
@@ -14,7 +14,7 @@ module:
 
       components:
         - name: PostForm
-          component: type.modules.blog.post.components.form
+          component: type.modules.blog.post.components.DefaultForm
 
       current-user: true
 
