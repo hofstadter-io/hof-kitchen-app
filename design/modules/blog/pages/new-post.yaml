@@ -4,7 +4,7 @@ module:
   pages:
 
     - name: new-post
-      route: "/post/new"
+      # route: "/post/new"
 
       style:
         - "design/modules/blog/pages/post/new/style.scss"
@@ -16,7 +16,7 @@ module:
         - name: PostForm
           component: type.modules.blog.post.components.form
 
-      currentUser: true
+      current-user: true
 
       data:
         - name: post

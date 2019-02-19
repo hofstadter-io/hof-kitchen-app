@@ -2,8 +2,8 @@ type:
   name: comment
 
   owned:
-    name: author
     type: has-many
+    name: author
 
   fields:
   - name: content
@@ -21,8 +21,3 @@ type:
     update: ['admin']
     delete: ['admin']
 
-  pages:
-    list:
-      route: "/comments"
-    view:
-      route: "/comment/:id"

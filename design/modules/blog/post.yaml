@@ -31,8 +31,10 @@ type:
       public: ['user']
       private: ['admin']
     create: ['user']
+    update: ['user']
     delete: ['admin']
 
   components:
     - name: CommentOwnerEditable
-      file: "design/modules/blog/components/CommentOwnerEditable.jsx"
+      content:
+        - "design/modules/blog/components/CommentOwnerEditable.jsx"

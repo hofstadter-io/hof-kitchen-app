@@ -12,12 +12,8 @@ type:
     relation: belongs-to-many
 
   auth:
+    view: ['user', 'admin']
     create: ['admin']
     update: ['admin']
     delete: ['admin']
 
-  pages:
-    list:
-      route: "/tags"
-    view:
-      route: "/tag/:id"
