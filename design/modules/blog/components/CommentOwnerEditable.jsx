@@ -41,7 +41,7 @@ class CommentOwnerEditable extends React.Component {
       if (editing) {
         return (
           <li className="list-group-item d-flex flex-column align-items-stretch">
-            <div className="form-group" style={{ flex: 1 }}>
+            <div className="form-group" style={ { flex: 1 } }>
               <input id="commentContent" type="text" className="form-control align-self-stretch" defaultValue={comment.content} />
             </div>
             <div className="align-self-end">
