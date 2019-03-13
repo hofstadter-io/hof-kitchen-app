@@ -41,6 +41,18 @@ app:
         - name: contact
           href: "/contact"
 
+      userItems:
+        - name: profile
+          href: "/profile"
+          roles:
+            - user
+            - admin
+        - name: account
+          href: "/account"
+          roles:
+            - user
+            - admin
+
     center:
       file: "pages/layout/content/content.html"
       translations:
